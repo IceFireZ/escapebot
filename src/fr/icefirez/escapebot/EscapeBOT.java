@@ -28,10 +28,10 @@ public class EscapeBOT implements Runnable {
 	private boolean running;
 
 	public EscapeBOT() throws LoginException, IllegalArgumentException, RateLimitedException {
-		jda = new JDABuilder(AccountType.BOT).setToken("Mzk3ODE0NDczMTczNDk5OTA1.DS2cvg.fg2F8dWoTvc5WcqCEDcIVjj2VSQ")
+		jda = new JDABuilder(AccountType.BOT).setToken("process.env.TOKEN")
 				.buildAsync();
 		jda.addEventListener(new EscapeEvents(commandMap));
-		System.out.println("Bot connecté");
+		System.out.println("Bot connectÃ©");
 	}
 
 	public void setRunning(boolean running) {
@@ -52,7 +52,7 @@ public class EscapeBOT implements Runnable {
 		}
 
 		scanner.close();
-		System.out.println("Bot deconnecté.");
+		System.out.println("Bot deconnectÃ©.");
 		jda.shutdown();
 		commandMap.save();
 		System.exit(0);
