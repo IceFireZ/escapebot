@@ -1,1 +1,1 @@
-worker: java src/fr/icefirez/escapebot/EscapeBOT
+worker: java escapebot/src/fr/icefirez/escapebot/EscapeBOT.java
